@@ -25,6 +25,12 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    margin-right: auto; 
+}
+
+nav {
+    margin-left: auto; 
+    margin-right: 20px;
 }
 
 nav ul {
@@ -32,12 +38,8 @@ nav ul {
     list-style: none;
     gap: 2rem;
     font-family: 'Times New Roman', Times, serif;
-}
-
-nav {
-    color: white;
-    font-size: 1.1rem;
-    margin-left: 1200px; 
+    padding: 0;
+    margin: 0;
 }
 
 .profile {
@@ -66,7 +68,7 @@ span {
 }
 
 .content {
-    padding: 30px 90px 5px 90px;
+    padding: 30px 100px 5px 100px;
     display: flex;
     align-items: start;
     height: calc(100vh - 65px); 
@@ -74,14 +76,14 @@ span {
     justify-content: space-between;
 }
 
-
 .little-container {
     width: 13%;
     height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;}
+    background-color: white;
+}
 
 .mayor-container {
     width: 85%;
@@ -90,4 +92,14 @@ span {
     justify-content: center;
     align-items: center;
     background-color: white;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        gap: 1rem;
+    }
+    
+    .content {
+        padding: 30px 20px 5px 20px;
+    }
 }
